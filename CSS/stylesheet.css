@@ -35,8 +35,8 @@ header {
 header img {
     width: auto;
     height: 45px;
-    margin-right: 400px;
-    margin-left: 530px;
+    margin-right: 300px;
+    margin-left: 560px;
 }
 
 .topnav input[type=text] {
@@ -247,6 +247,11 @@ header img {
     background-color: rgba(145, 0, 89, 0.6);
     padding: 10px;
     font-size: 25px;
+}
+
+.thelatest-item:hover {
+    transform: scale(1.045);
+    transition: ease-in 0.15s;
 }
 
 
@@ -551,9 +556,12 @@ footer p {
     font-size: 25px;
 }
 
+.recipes-item:hover {
+    transform: scale(1.02);
+    transition: ease-in 0.15s;
+}
+
 /* Ingredients Page */
-
-
 
 .ingredients-list {
     width: 90vw;
@@ -578,6 +586,7 @@ footer p {
     list-style-type: none;
     font-size: 30px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .ingredients-list li {
@@ -585,12 +594,17 @@ footer p {
     color: rgb(0, 0, 0);
 }
 
-.ingredients-list li:hover {
-    background: radial-gradient(circle, rgba(173,0,81,1) 33%, rgba(255,203,0,1) 100%);
-    color: #fff; 
-    text-decoration: none; 
-    text-decoration: underline;
+.ingredients-list li {
+    background: linear-gradient(90deg, rgba(173,0,81,1) 12%, rgba(96,0,255,1) 80%) left / var(--p,0) no-repeat;
+    transition: .4s,background-position 0s;
+    color: black;
+    background-color: white;
+}
 
+.ingredients-list li:hover {
+    color: white;
+    --p: 100%;
+    background-position: right;
 }
 
 .ingredients-list ul {
@@ -617,6 +631,11 @@ footer p {
     z-index: 1;
 }
 
+.inseason-box a {
+    text-decoration: none;
+    color: white;
+}
+
 .inseason-box h1 {
     text-align: center;
     padding: 20px;
@@ -635,6 +654,7 @@ footer p {
     transition: 0.5s ease;
     z-index: 2; 
 }
+/* Gradient Animations courtesy of https://www.gradient-animator.com/ */
 
 #spring-box {
     width: 25%;
@@ -643,10 +663,60 @@ footer p {
     color: var(--season-font-color);
 }
 
+#spring-box {
+    background: linear-gradient(270deg, #246655, #59964d);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 #summer-box {
     width: 25%;
     background: rgb(173,0,81);
     background: radial-gradient(circle, rgba(173,0,81,1) 33%, rgba(255,203,0,1) 100%);     color: var(--season-font-color);
+}
+
+#summer-box {
+    background: linear-gradient(270deg, #d6750d, #a29b00, #cd3c00);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 #fall-box {
@@ -654,11 +724,984 @@ footer p {
     background: rgb(173,0,81);
     background: radial-gradient(circle, rgb(139, 51, 0) 33%, rgb(164, 137, 31) 100%);     color: var(--season-font-color);
 }
+
+#fall-box {
+    background: linear-gradient(270deg, #7c4101, #630c00);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 #winter-box {
     width: 25%;
     background: rgb(173,0,81);
     background: radial-gradient(circle, rgb(2, 58, 202) 33%, rgb(0, 204, 255) 100%); 
     color: var(--season-font-color);
+}
+
+#winter-box {
+    background: linear-gradient(270deg, #2d3e8a, #10859d, #5050bb);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Spring */
+
+#sp-button {
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#sp-button:hover {
+    text-decoration: underline;
+}
+
+
+.sp-ingredients-list {
+    width: 90vw;
+    height: 290px;
+}
+
+.sp-ingredients-list h1 {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #32b334;
+    color: white;
+}
+
+.sp-ingredients-list h1 {
+    background: linear-gradient(270deg, #246655, #28b60c);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.sp-ingredients-list li {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    list-style-type: none;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.sp-ingredients-list li {
+    transition: background-color 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
+    color: rgb(0, 0, 0);
+}
+
+.sp-ingredients-list li:hover {
+    background: radial-gradient(circle, rgb(10, 135, 33) 33%, rgb(35, 225, 2) 100%);
+    color: #fff; 
+    text-decoration: none; 
+    text-decoration: underline;
+
+}
+
+.sp-ingredients-list ul {
+    margin: 10px
+}
+
+.sp-recipes-container-grid { 
+    height: 1000px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+#sp-recipes-griditem1 {
+    background: url(images/dish8.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem2 {
+    background: url(images/dish9.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem3 {
+    background: url(images/dish10.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem4 {
+    background: rgb(29, 135, 22);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem4 h1 {
+    background: rgb(8, 67, 2);
+}
+
+#sp-recipes-griditem5 {
+    background: url(images/dish11.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem6 {
+    background: rgb(29, 135, 22);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem6 h1 {
+    background: rgb(8, 67, 2);
+}
+
+#sp-recipes-griditem7 {
+    background: url(images/dish12.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem8 {
+    background: url(images/dish13.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem9 {
+    background: url(images/dish14.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem10 {
+    background: url(images/dish15.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem11 {
+    background: url(images/dish16.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sp-recipes-griditem12 {
+    background: url(images/dish17.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sp-recipes-item {
+    padding: 10px;
+    background-color: #32b334;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    height: 350px;
+    box-shadow: 4px 4px rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.sp-recipes-item p {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.sp-recipes-item:hover {
+    transform: scale(1.045);
+    transition: ease-in 0.15s;
+}
+
+.sp-recipes-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sp-recipes-item a h1:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.sp-recipes-item h1 {
+    background-color: rgb(50, 179, 52, 0.6);
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Summer Site */
+
+#sum-button {
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#sum-button:hover {
+    text-decoration: underline;
+}
+
+
+.sum-ingredients-list {
+    width: 90vw;
+    height: 290px;
+}
+
+.sum-ingredients-list h1 {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #32b334;
+    color: white;
+}
+
+.sum-ingredients-list h1 {
+    background: linear-gradient(270deg, #a80101, #dcad00);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.sum-ingredients-list li {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    list-style-type: none;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.sum-ingredients-list li {
+    transition: background-color 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
+    color: rgb(0, 0, 0);
+}
+
+.sum-ingredients-list li:hover {
+    background: radial-gradient(circle, rgb(207, 12, 2) 33%, rgb(210, 119, 0) 100%);
+    color: #fff; 
+    text-decoration: none; 
+    text-decoration: underline;
+
+}
+
+.sum-ingredients-list ul {
+    margin: 10px
+}
+
+.sum-recipes-container-grid { 
+    height: 1000px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+#sum-recipes-griditem1 {
+    background: url(images/dish18.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem2 {
+    background: url(images/dish19.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem3 {
+    background: url(images/dish20.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem4 {
+    background: rgb(127, 1, 1);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem4 h1 {
+    background: rgba(216, 0, 0, 0.707);
+}
+
+#sum-recipes-griditem5 {
+    background: url(images/dish21.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem6 {
+    background: rgb(127, 1, 1);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem6 h1 {
+    background: rgba(216, 0, 0, 0.707);
+}
+
+#sum-recipes-griditem7 {
+    background: url(images/dish22.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem8 {
+    background: url(images/dish23.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem9 {
+    background: url(images/dish24.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem10 {
+    background: url(images/dish25.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem11 {
+    background: url(images/dish26.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sum-recipes-griditem12 {
+    background: url(images/dish27.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sum-recipes-item {
+    padding: 10px;
+    background-color: #980202;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    height: 350px;
+    box-shadow: 4px 4px rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.sum-recipes-item p {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.sum-recipes-item:hover {
+    transform: scale(1.045);
+    transition: ease-in 0.15s;
+}
+
+.sum-recipes-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sum-recipes-item a h1:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.sum-recipes-item h1 {
+    background-color: rgba(216, 0, 0, 0.707);
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Fall Site */
+
+
+#fall-button {
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#fall-button:hover {
+    text-decoration: underline;
+}
+
+
+.fall-ingredients-list {
+    width: 90vw;
+    height: 290px;
+}
+
+.fall-ingredients-list h1 {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #32b334;
+    color: white;
+}
+
+.fall-ingredients-list h1 {
+    background: linear-gradient(270deg, #a95912, #dcad00);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.fall-ingredients-list li {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    list-style-type: none;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.fall-ingredients-list li {
+    transition: background-color 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
+    color: rgb(0, 0, 0);
+}
+
+.fall-ingredients-list li:hover {
+    background: radial-gradient(circle, rgb(155, 75, 0) 33%, rgb(196, 127, 38) 100%);
+    color: #fff; 
+    text-decoration: none; 
+    text-decoration: underline;
+
+}
+
+.fall-ingredients-list ul {
+    margin: 10px
+}
+
+.fall-recipes-container-grid { 
+    height: 1000px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+#fall-recipes-griditem1 {
+    background: url(images/dish28.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem2 {
+    background: url(images/dish29.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem3 {
+    background: url(images/dish30.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem4 {
+    background: #6e3b01;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem4 h1 {
+    background: rgba(199, 106, 0, 0.707);
+}
+
+#fall-recipes-griditem5 {
+    background: url(images/dish31.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem6 {
+    background: #6e3b01;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem6 h1 {
+    background: rgba(199, 106, 0, 0.707);
+}
+
+#fall-recipes-griditem7 {
+    background: url(images/dish32.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem8 {
+    background: url(images/dish33.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem9 {
+    background: url(images/dish34.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem10 {
+    background: url(images/dish35.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem11 {
+    background: url(images/dish36.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fall-recipes-griditem12 {
+    background: url(images/dish37.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fall-recipes-item {
+    padding: 10px;
+    background-color: #6e3b01;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    height: 350px;
+    box-shadow: 4px 4px rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.fall-recipes-item p {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.fall-recipes-item:hover {
+    transform: scale(1.045);
+    transition: ease-in 0.15s;
+}
+
+.fall-recipes-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fall-recipes-item a h1:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.fall-recipes-item h1 {
+    background-color: rgba(199, 106, 0, 0.707);
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Winter Site */
+
+#win-button {
+    font-size: 35px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#win-button:hover {
+    text-decoration: underline;
+}
+
+
+.win-ingredients-list {
+    width: 90vw;
+    height: 290px;
+}
+
+.win-ingredients-list h1 {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #32b334;
+    color: white;
+}
+
+.win-ingredients-list h1 {
+    background: linear-gradient(270deg, #025b6d, #2ad5e1);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.win-ingredients-list li {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 5px;
+    list-style-type: none;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.win-ingredients-list li {
+    transition: background-color 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
+    color: rgb(0, 0, 0);
+}
+
+.win-ingredients-list li:hover {
+    background: radial-gradient(circle, rgb(2, 146, 207) 33%, rgb(59, 138, 255) 100%);
+    color: #fff; 
+    text-decoration: none; 
+    text-decoration: underline;
+
+}
+
+.win-ingredients-list ul {
+    margin: 10px
+}
+
+.win-recipes-container-grid { 
+    height: 1000px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+#win-recipes-griditem1 {
+    background: url(images/dish38.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem2 {
+    background: url(images/dish39.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem3 {
+    background: url(images/dish40.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem4 {
+    background: rgb(1, 75, 124);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem4 h1 {
+    background: rgba(0, 158, 216, 0.707);
+}
+
+#win-recipes-griditem5 {
+    background: url(images/dish41.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem6 {
+    background: rgb(1, 75, 124);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem6 h1 {
+    background: rgba(0, 158, 216, 0.707);
+}
+
+#win-recipes-griditem7 {
+    background: url(images/dish42.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem8 {
+    background: url(images/dish43.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem9 {
+    background: url(images/dish44.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem10 {
+    background: url(images/dish45.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem11 {
+    background: url(images/dish46.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#win-recipes-griditem12 {
+    background: url(images/dish47.jpg);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.win-recipes-item {
+    padding: 10px;
+    background-color: #027298;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    height: 350px;
+    box-shadow: 4px 4px rgb(61, 61, 61);
+    overflow: hidden;
+}
+
+.win-recipes-item p {
+    margin: 8px;
+    font-size: 20px;
+}
+
+.win-recipes-item:hover {
+    transform: scale(1.045);
+    transition: ease-in 0.15s;
+}
+
+.win-recipes-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.win-recipes-item a h1:hover {
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.win-recipes-item h1 {
+    background-color: rgba(0, 158, 216, 0.707);
+    padding: 10px;
+    font-size: 25px;
+}
+
+/* Error Site */
+
+.error-box {
+    display: flex;
+    position: block;
+    flex-direction: column;
+    width: 100vw;
+    height: 115px;
+    margin-top: 180px;
+    padding: 20px;
+    text-align: center;
+}
+
+.error-box h1 {
+    font-size: 60px;
+}
+
+.error-box p {
+    font-size: 30px;
+}
+
+/* Recipe Demo */
+
+.recipe-info-ingredients {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.recipe-info-ingredients li {
+    padding: 10px;
+    font-size: 19px;
+}
+
+.recipe-info-ingredients ul {
+    margin-left: 20px;
+}
+
+.recipe-info-steps {
+    display: block;
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border: 1px solid black; 
+}
+
+.recipe-info-steps p {
+    font-size: 19px;
+    padding: 10px;
 }
 
 
