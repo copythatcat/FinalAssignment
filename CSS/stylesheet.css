@@ -403,28 +403,28 @@ footer p {
 }
 
 #guides1-griditem1 {
-    background-image: url(/CSS/images/knife.jpg);
+    background-image: url(images/knife.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #guides1-griditem2 {
-    background-image: url(/CSS/images/produce.jpg);
+    background-image: url(images/produce.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #guides1-griditem3 {
-    background-image: url(/CSS/images/meat.jpg);
+    background-image: url(images/meat.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #guides1-griditem4 {
-    background-image: url(/CSS/images/salt.jpg);
+    background-image: url(images/salt.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -442,35 +442,35 @@ footer p {
 
 
 #recipes-griditem1 {
-    background: url(/CSS/images/cake.jpg);
+    background: url(images/cake.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipes-griditem2 {
-    background: url(/CSS/images/burger.jpg);
+    background: url(images/burger.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipes-griditem3 {
-    background: url(/CSS/images/pizza.jpg);
+    background: url(images/pizza.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipes-griditem4 {
-    background: url(/CSS/images/salad2.jpg);
+    background: url(images/salad2.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #recipes-griditem5 {
-    background: url(/CSS/images/spritz.jpg);
+    background: url(images/spritz.jpg);
     background-size: 400px 400px;
     background-repeat: no-repeat;
     background-size: cover;
