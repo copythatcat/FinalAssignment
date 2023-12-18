@@ -4,20 +4,21 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="GoodCook Recipes" content="">
+    <meta name="GoodCook Recipes" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/CSS/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src='jsfile.js'></script>
+    <script src="jsfile.js"></script>
   </head>
 
-<body>
-      <!-- Sidebar -->
+  <body>
+    <!-- Sidebar -->
     <div id="sidebar">
       <div class="toggle-btn" onclick="show()">
         <span></span>
@@ -25,39 +26,123 @@
         <span></span>
         <span></span>
       </div>
-          <ul>
-            <a href="/recipes.html"><li>Recipes</li></a>
-            <a href="/guides.html"><li>Guides</li></a>
-            <a href="/ingredients.html"><li>Ingredients</li></a>
-            <a href="/inseason.html"><li>In-Season</li></a>
-          </ul>
+      <ul>
+        <a href="/recipes.html"><li>Recipes</li></a>
+        <a href="/guides.html"><li>Guides</li></a>
+        <a href="/ingredients.html"><li>Ingredients</li></a>
+        <a href="/inseason.html"><li>In-Season</li></a>
+      </ul>
     </div>
 
-      <!-- Header -->
+    <!-- Header -->
     <header>
-        <span></span>
-        <span></span>
-        <a href="/index.html"><img src="CSS/images/GCLogo.svg" alt="GoodCook"></a>
-         <div class="topnav">
-          <input type="text" id="search-input" placeholder="Search..">
-        </div> 
-        <!-- Searchbox Demo -->
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              var searchInput = document.getElementById("search-input");
+      <span></span>
+      <span></span>
+      <a href="/index.html"
+        ><img src="CSS/images/GCLogo.svg" alt="GoodCook"
+      /></a>
+      <div class="topnav">
+        <input type="text" id="search-input" placeholder="Search.." />
+      </div>
+      <!-- Searchbox Demo -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("search-input");
 
-              searchInput.addEventListener("keydown", function(event) {
-                  if (event.key === "Enter") {
-                      event.preventDefault(); 
-                      alert("Search Function Unavailable Currently ):");
-                  }
-              });
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Search Function Unavailable Currently ):");
+            }
           });
-        </script>
-
+        });
+      </script>
     </header>
 
-    <!-- Hero -->
+    <!-- Ingredients -->
+    <div class="ingredients-list">
+      <h1>Dive into your next dish:</h1>
+      <ul>
+        <li>Tomatoes</li>
+        <li>Onions</li>
+        <li>Garlic</li>
+        <li>Bell Peppers</li>
+        <li>Carrots</li>
+        <li>Broccoli</li>
+        <li>Chicken</li>
+        <li>Beef</li>
+        <li>Pork</li>
+        <li>Salmon</li>
+        <li>Shrimp</li>
+        <li>Spinach</li>
+        <li>Kale</li>
+        <li>Potatoes</li>
+        <li>Sweet Potatoes</li>
+        <li>Avocado</li>
+        <li>Strawberries</li>
+        <li>Blueberries</li>
+        <li>Apples</li>
+        <li>Oranges</li>
+        <li>Lemons</li>
+        <li>Limes</li>
+        <li>Garlic Powder</li>
+        <li>Cumin</li>
+        <li>Paprika</li>
+        <li>Black Pepper</li>
+        <li>Paprika</li>
+        <li>Olive Oil</li>
+        <li>Balsamic Vinegar</li>
+        <li>Cucumber</li>
+        <li>Cherry Tomatoes</li>
+        <li>Zucchini</li>
+        <li>Eggs</li>
+        <li>Cheddar Cheese</li>
+        <li>Parmesan Cheese</li>
+        <li>Coriander</li>
+        <li>Cilantro</li>
+        <li>Thyme</li>
+        <li>Rosemary</li>
+        <li>Quinoa</li>
+        <li>Walnuts</li>
+        <li>Honey</li>
+        <li>Dijon Mustard</li>
+        <li>Cayenne Pepper</li>
+        <li>Cinnamon</li>
+        <li>Nutmeg</li>
+        <li>Vanilla Extract</li>
+        <li>Chickpeas</li>
+        <li>Soy Sauce</li>
+        <li>Ginger</li>
+        <li>Bay Leaves</li>
+      </ul>
+    </div>
 
+    <!-- Footer -->
+    <footer>
+      <img src="/CSS/images/GCLogo.svg" alt="GoodCook 2023" />
+      <p>Get fresh recipes, cooking tips, and more!</p>
+      <div class="bottomemail">
+        <input type="text" id="email-input" placeholder="Enter Email" />
+      </div>
+      <div class="link-container">
+        <a href="#"><h4>About •</h4></a>
+        <a href="#"><h4>Contact Us •</h4></a>
+        <a href="#"><h4>Submit A Recipe •</h4></a>
+        <a href="#"><h4>Privacy Policy</h4></a>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("email-input");
 
-</body>
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Email Subscription Unavailable ):");
+            }
+          });
+        });
+      </script>
+    </footer>
+
+  </body>
+</html>

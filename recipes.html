@@ -4,20 +4,21 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title></title>
-    <meta name="GoodCook Recipes" content="">
+    <meta name="GoodCook Recipes" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/CSS/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src='jsfile.js'></script>
+    <script src="jsfile.js"></script>
   </head>
 
-<body>
-      <!-- Sidebar -->
+  <body>
+    <!-- Sidebar -->
     <div id="sidebar">
       <div class="toggle-btn" onclick="show()">
         <span></span>
@@ -25,39 +26,105 @@
         <span></span>
         <span></span>
       </div>
-          <ul>
-            <a href="/recipes.html"><li>Recipes</li></a>
-            <a href="/guides.html"><li>Guides</li></a>
-            <a href="/ingredients.html"><li>Ingredients</li></a>
-            <a href="/inseason.html"><li>In-Season</li></a>
-          </ul>
+      <ul>
+        <a href="/recipes.html"><li>Recipes</li></a>
+        <a href="/guides.html"><li>Guides</li></a>
+        <a href="/ingredients.html"><li>Ingredients</li></a>
+        <a href="/inseason.html"><li>In-Season</li></a>
+      </ul>
     </div>
 
-      <!-- Header -->
+    <!-- Header -->
     <header>
-        <span></span>
-        <span></span>
-        <a href="/index.html"><img src="CSS/images/GCLogo.svg" alt="GoodCook"></a>
-         <div class="topnav">
-          <input type="text" id="search-input" placeholder="Search..">
-        </div> 
-        <!-- Searchbox Demo -->
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              var searchInput = document.getElementById("search-input");
+      <span></span>
+      <span></span>
+      <a href="/index.html"
+        ><img src="CSS/images/GCLogo.svg" alt="GoodCook"
+      /></a>
+      <div class="topnav">
+        <input type="text" id="search-input" placeholder="Search.." />
+      </div>
+      <!-- Searchbox Demo -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("search-input");
 
-              searchInput.addEventListener("keydown", function(event) {
-                  if (event.key === "Enter") {
-                      event.preventDefault(); 
-                      alert("Search Function Unavailable Currently ):");
-                  }
-              });
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Search Function Unavailable Currently ):");
+            }
           });
-        </script>
-
+        });
+      </script>
     </header>
 
-    <!-- Hero -->
+    <!-- Recipes -->
+    <div class="recipes-container-grid">
+      <div class="recipes-item" id="recipes-griditem1">
+        <a href=""><h1>Raspberry Delight</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem2">
+        <a href=""><h1>Breakfast Burger</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem3">
+        <a href=""><h1>BBQ Pizza</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem4">
+        <a href=""><h1>Spring Salad</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem5">
+        <a href=""><h1>Negroni Spritz</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem6">
+        <a href=""><h1>Tumeric Salmon</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem7">
+        <a href=""><h1>Lamb and Chicken Kebabs</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem8">
+        <a href=""><h1>Swedish Meatballs</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem9">
+        <a href=""><h1>Club Sandwich</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem10">
+        <a href=""><h1>Belgian Waffles</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem11">
+        <a href=""><h1>Salmon Bowl</h1></a>
+      </div>
+      <div class="recipes-item" id="recipes-griditem12">
+        <a href=""><h1>Thai Chili Soup</h1></a>
+      </div>
+    </div>
 
+    <!-- Footer -->
+    <footer>
+      <img src="/CSS/images/GCLogo.svg" alt="GoodCook 2023" />
+      <p>Get fresh recipes, cooking tips, and more!</p>
+      <div class="bottomemail">
+        <input type="text" id="email-input" placeholder="Enter Email" />
+      </div>
+      <div class="link-container">
+        <a href="#"><h4>About •</h4></a>
+        <a href="#"><h4>Contact Us •</h4></a>
+        <a href="#"><h4>Submit A Recipe •</h4></a>
+        <a href="#"><h4>Privacy Policy</h4></a>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var searchInput = document.getElementById("email-input");
 
-</body>
+          searchInput.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              alert("Email Subscription Unavailable ):");
+            }
+          });
+        });
+      </script>
+    </footer>
+
+  </body>
+</html>
