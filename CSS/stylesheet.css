@@ -299,6 +299,11 @@ header img {
     background-size: cover;
 }
 
+.thelatest-item:hover {
+    transform: scale(1.02);
+    transition: ease-in 0.15s;
+}
+
 /* Footer */
 
 footer {
