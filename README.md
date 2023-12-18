@@ -1,3 +1,3 @@
 # Week6
 
-This is the assignment for week 6!
+This is the Final assignment!
